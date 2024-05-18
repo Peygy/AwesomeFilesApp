@@ -1,0 +1,28 @@
+@ApiService_HostAddress = http://localhost:5010
+
+GET {{ApiService_HostAddress}}/api/files
+Accept: application/json
+
+###
+
+POST {{ApiService_HostAddress}}/api/files/archive
+Content-Type: application/json
+
+{
+    "fileNames": [
+        "file1",
+        "file2",
+        "file3"
+    ]
+}
+###
+
+GET {{ApiService_HostAddress}}/api/files/archive/490064
+Accept: application/json
+
+###
+
+GET {{ApiService_HostAddress}}/api/files/archive/490064/download
+Accept: application/json
+#// curl http://localhost:5010/api/files/archive/723179/download --output archive.zip
+###
