@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\apiservice\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|solutionrelative:apiservice\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\apiservice\\apiservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|solutionrelative:apiservice\\apiservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\apiservice\\services\\archiveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|solutionrelative:apiservice\\services\\archiveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\apiservice\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|solutionrelative:apiservice\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|solutionrelative:apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\apiservice\\models\\archivecreationprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|solutionrelative:apiservice\\models\\archivecreationprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,91 +14,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Program.cs",
               "RelativeDocumentMoniker": "ApiService\\Program.cs",
               "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Program.cs",
               "RelativeToolTip": "ApiService\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABsAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T06:44:37.831Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FilesController.cs",
-              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Controllers\\FilesController.cs",
-              "RelativeDocumentMoniker": "ApiService\\Controllers\\FilesController.cs",
-              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Controllers\\FilesController.cs",
-              "RelativeToolTip": "ApiService\\Controllers\\FilesController.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAIwGAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T04:44:55.072Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApiService.http",
-              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\ApiService.http",
-              "RelativeDocumentMoniker": "ApiService\\ApiService.http",
-              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\ApiService.http",
-              "RelativeToolTip": "ApiService\\ApiService.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-05-18T09:04:49.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ArchiveService.cs",
-              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Services\\ArchiveService.cs",
-              "RelativeDocumentMoniker": "ApiService\\Services\\ArchiveService.cs",
-              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Services\\ArchiveService.cs",
-              "RelativeToolTip": "ApiService\\Services\\ArchiveService.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAnwFcAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T05:24:17.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FileService.cs",
-              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Services\\FileService.cs",
-              "RelativeDocumentMoniker": "ApiService\\Services\\FileService.cs",
-              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Services\\FileService.cs",
-              "RelativeToolTip": "ApiService\\Services\\FileService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T05:24:27.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ArchiveCreationProcess.cs",
-              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Models\\ArchiveCreationProcess.cs",
-              "RelativeDocumentMoniker": "ApiService\\Models\\ArchiveCreationProcess.cs",
-              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Models\\ArchiveCreationProcess.cs",
-              "RelativeToolTip": "ApiService\\Models\\ArchiveCreationProcess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T05:25:06.521Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -1,4 +1,7 @@
+using ApiService.Data;
+using ApiService.Middlewares;
 using ApiService.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -6,6 +9,9 @@ var configuration = builder.Configuration;
 // ƒобавление DI дл€ работы сервисов FileService и ArchiveService
 builder.Services.AddSingleton<FileService>();
 builder.Services.AddSingleton<ArchiveService>();
+
+// ƒобавление провайдера данных дл€ SqlLite дл€ записи логов в базу данных SqlLite
+builder.Services.AddDbContext<LogDataContext>(options => options.UseSqlite(configuration.GetConnectionString("SqlLite")));
 
 // ƒобавление сервиса, дл€ регистрации всего необходимого дл€ разработки веб-API
 builder.Services.AddControllers();
@@ -21,6 +27,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Middleware дл€ логировани€ запросов пользовател€ на серввис
+app.UseMiddleware<LogDataMiddleware>();
 
 app.UseHttpsRedirection();
 
