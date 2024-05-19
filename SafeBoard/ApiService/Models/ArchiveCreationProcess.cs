@@ -12,6 +12,8 @@
         // Время создания процесса (по умолчанию задается текущее время с момента создания объекта класса)
         public DateTime CreationTime{ get; set; } = DateTime.Now;
 
+        // Путь к расположению zip-архива
+        public string ZipFilePath { get; set; } = null!;
         // Коллекция путей файлов, находящихся внутри zip-архива
         public IEnumerable<string> FilePaths { get; set; } = null!;
     }

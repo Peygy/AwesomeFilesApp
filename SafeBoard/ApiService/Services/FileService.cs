@@ -33,8 +33,10 @@ namespace ApiService.Services
                 // Логирование информации о созданной директории
                 logger.LogInformation($"Создана директория {filesDirPath}");
 
+#if DEBUG
                 // Инициализация файлов в директории
                 InitAwesomeFiles();
+#endif
             }
         }
 

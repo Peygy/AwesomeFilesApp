@@ -22,7 +22,16 @@ namespace ApiService.Tests
             // Удаляем тестовую директорию, если она уже существует
             if (Directory.Exists(testFilesDirPath))
             {
-                Directory.Delete(testFilesDirPath, true);
+                try
+                {
+                    Directory.Delete(testFilesDirPath, true);
+                }
+                catch (IOException)
+                {
+                    // Retry logic or wait for a short period to ensure all handles are released
+                    Thread.Sleep(100);
+                    Directory.Delete(testFilesDirPath, true);
+                }
             }
 
             fileService = new FileService(configurationMock.Object, loggerMock.Object);

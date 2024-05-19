@@ -1,5 +1,6 @@
 ﻿using ApiService.Models;
 using ApiService.Services;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Moq;
@@ -15,16 +16,31 @@ namespace ApiService.Tests
         {
             var loggerMock = new Mock<ILogger<ArchiveService>>();
             var configurationMock = new Mock<IConfiguration>();
+            var memoryCacheMock = new Mock<IMemoryCache>();
+
+            var cacheEntryMock = new Mock<ICacheEntry>();
+            memoryCacheMock
+                .Setup(mc => mc.CreateEntry(It.IsAny<object>()))
+                .Returns(cacheEntryMock.Object);
 
             testArchiveDirPath = Path.Combine(Path.GetTempPath(), "archives_test");
             configurationMock.Setup(config => config.GetSection("Paths:Archives").Value).Returns(testArchiveDirPath);
 
             if (Directory.Exists(testArchiveDirPath))
             {
-                Directory.Delete(testArchiveDirPath, true);
+                try
+                {
+                    Directory.Delete(testArchiveDirPath, true);
+                }
+                catch (IOException)
+                {
+                    // Retry logic or wait for a short period to ensure all handles are released
+                    Thread.Sleep(100);
+                    Directory.Delete(testArchiveDirPath, true);
+                }
             }
 
-            archiveService = new ArchiveService(configurationMock.Object, loggerMock.Object);
+            archiveService = new ArchiveService(configurationMock.Object, loggerMock.Object, memoryCacheMock.Object);
         }
 
         [Fact]
@@ -43,8 +59,9 @@ namespace ApiService.Tests
             // Act
             var loggerMock = new Mock<ILogger<ArchiveService>>();
             var configurationMock = new Mock<IConfiguration>();
+            var memoryCacheMock = new Mock<IMemoryCache>();
             configurationMock.Setup(config => config.GetSection("Paths:Archives").Value).Returns(testArchiveDirPath);
-            _ = new ArchiveService(configurationMock.Object, loggerMock.Object);
+            _ = new ArchiveService(configurationMock.Object, loggerMock.Object, memoryCacheMock.Object);
 
             // Assert
             Assert.True(Directory.Exists(testArchiveDirPath));

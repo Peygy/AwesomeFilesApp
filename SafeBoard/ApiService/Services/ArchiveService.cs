@@ -1,4 +1,5 @@
 ﻿using ApiService.Models;
+using Microsoft.Extensions.Caching.Memory;
 using System.Collections.Concurrent;
 using System.IO.Compression;
 
@@ -12,6 +13,7 @@ namespace ApiService.Services
         private readonly string archivesDirPath;
         private readonly ConcurrentDictionary<int, ArchiveCreationProcess> processStatusStorage;
         private readonly ILogger<ArchiveService> logger;
+        private readonly IMemoryCache memoryCache;
 
         /// <summary>
         /// Конструктор класса ArchiveService.
@@ -20,13 +22,16 @@ namespace ApiService.Services
         /// </summary>
         /// <param name="configuration">Конфигурация приложения, содержащая пути к архивам.</param>
         /// <param name="logger">Логгер для ведения журнала операций.</param>
-        public ArchiveService(IConfiguration configuration, ILogger<ArchiveService> logger)
+        /// <param name="memoryCache">Интерфейс для кэширования.</param>
+        public ArchiveService(IConfiguration configuration, ILogger<ArchiveService> logger, IMemoryCache memoryCache)
         {
             // Получение пути, к директории архивов, из конфигурации
             archivesDirPath = configuration.GetSection("Paths:Archives").Value;
 
             // Инициализация логгера
             this.logger = logger;
+            // Инициализация кэширования в памяти
+            this.memoryCache = memoryCache;
 
             // Проверка существования директории, и её создание, если не существует
             if (!Directory.Exists(archivesDirPath))
@@ -71,6 +76,8 @@ namespace ApiService.Services
                 Status = "Выполняется",
                 FilePaths = filesPaths
             };
+            // Указание пути расположения zip-архива
+            newProcess.ZipFilePath = Path.Combine(archivesDirPath, $"{newProcess.Id}.zip");
 
             // Добавление процесса в хранилище
             processStatusStorage.TryAdd(newProcess.Id, newProcess);
@@ -93,11 +100,8 @@ namespace ApiService.Services
         {
             try
             {
-                // Формирование пути архива
-                var newArchivePath = Path.Combine(archivesDirPath, $"{newProcess.Id}.zip");
-
                 // Создание файла для последующего создания zip-архива
-                using (var zipStream = new FileStream(newArchivePath, FileMode.Create))
+                using (var zipStream = new FileStream(newProcess.ZipFilePath, FileMode.Create))
                 {
                     // Создание нового zip-архива
                     using (var zipArchive = new ZipArchive(zipStream, ZipArchiveMode.Create))
@@ -115,6 +119,8 @@ namespace ApiService.Services
                 newProcess.Status = "Успешно";
                 // Обноввление состояния процесса в хранилище
                 processStatusStorage[newProcess.Id] = newProcess;
+                // Кэширование архива путем добавление пары путь: связанный процесс
+                memoryCache.Set(newProcess.Id, newProcess, TimeSpan.FromMinutes(10));
                 // Логирование информации о завершении формирования архива
                 logger.LogInformation($"Процесс {newProcess.Id} завершен успешно");
             }
@@ -136,10 +142,8 @@ namespace ApiService.Services
         {
             try
             {
-                // Получение статуса процесса по его идентификатору
-                processStatusStorage.TryGetValue(processId, out var process);
                 // Возвращение статуса процесса
-                return process?.Status;
+                return GetArchiveCreationProcess(processId)?.Status;
             }
             catch
             {
@@ -155,20 +159,29 @@ namespace ApiService.Services
         /// <returns>Поток с архивом или null, если архив не найден или процесс не завершен успешно.</returns>
         public Stream? GetArchiveByProcessId(int processId)
         {
-            // Получение процесс по его идентификатору
-            processStatusStorage.TryGetValue(processId, out var process);
+            var process = GetArchiveCreationProcess(processId);
 
             // Проверка успешного завершения процесса
             if (process != null && process.Status == "Успешно")
             {
-                // Формирование пути архива
-                var archivePath = Path.Combine(archivesDirPath, $"{process.Id}.zip");
                 // Возвращение потока для скачивания архива
-                return new FileStream(archivePath, FileMode.Open, FileAccess.Read);
+                return new FileStream(process.ZipFilePath, FileMode.Open, FileAccess.Read);
             }
 
             // Возвращение null, если архив не найден или процесс не завершен успешно
             return null;
+        }
+
+        private ArchiveCreationProcess? GetArchiveCreationProcess(int processId)
+        {
+            // Получение статуса процесса по его идентификатору из кэша
+            if (!memoryCache.TryGetValue(processId, out ArchiveCreationProcess? process))
+            {
+                // Получение статуса процесса по его идентификатору из хранилища
+                processStatusStorage.TryGetValue(processId, out process);
+            }
+
+            return process;
         }
     }
 }
