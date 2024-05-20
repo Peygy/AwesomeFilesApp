@@ -65,7 +65,7 @@ namespace ApiService.Controllers
             if (fileNames.Count == 0)
             {
                 // Если пользователь не задал наименования файлов, то выдается ошибка запроса
-                return BadRequest("Должен присутствовать хотя бы один файл!");
+                return BadRequest("At least one file must be present!");
             }
 
             // Выборка наименования каждого файла входящей коллекции
@@ -75,7 +75,7 @@ namespace ApiService.Controllers
                 if (!fileService.FileExistCheck(file))
                 {
                     // Если файл не существует, то выдается ошибка запроса
-                    return BadRequest($"Файла {file} не существует!");
+                    return BadRequest($"File {file} not exists!");
                 }
             }
 
@@ -110,7 +110,7 @@ namespace ApiService.Controllers
             if (status == null)
             {
                 // Если статус процесса создания архива не найден, то выдается ошибка запроса
-                return BadRequest($"Процесса с номером {processId} не существует!");
+                return BadRequest($"Process number {processId} does not exist!");
             }
 
             // Отправка статуса процесса создания архива
@@ -139,7 +139,7 @@ namespace ApiService.Controllers
             if (stream == null)
             {
                 // Если поток не создан, то нужного процесса не существует
-                return BadRequest($"Архива, процесс которого имеет номер {processId}, не существует!");
+                return BadRequest($"The archive whose process number {processId} does not exist!");
             }
 
             // Отправка потока с вписанным в него необходимым zip-архивом

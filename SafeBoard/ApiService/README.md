@@ -7,28 +7,31 @@
 ## Запуск сервиса
 
 1. Убедитесь, что у вас установлен .NET SDK.
-2. Склонируйте репозиторий и перейдите в директорию проекта `SafeBoard`.
-3. Создайте директорию `filees` и `ArchivesDirectory` и добавьте файлы.
-4. Запустите сервис командой (Powershell):
+2. Склонируйте репозиторий и перейдите в директорию проекта `SafeBoard/ApiService`.
+3. Запустите сервис командой (Powershell):
 
 ```bash
 dotnet run
 ```
 
+4. Создайте в папку `files` и добавьте файлы взаимодейтсвия (или воспользуйтесь уже готовыми файлами).
+
 #### Запуск сервиса через Docker
 
-1. Убедитесь, что у вас установлен Docker
+1. Убедитесь, что у вас установлен Docker.
 2. Соберите образ сервиса командой (Powershell):
 
 ```bash
 docker build -f "./ApiService/Dockerfile" --force-rm -t apiservice --build-arg "BUILD_CONFIGURATION=Release" --label "com.microsoft.created-by=visual-studio" --label "com.microsoft.visual-studio.project-name=ApiService" .
 ```
 
-4. После сборки образа, запустите контейнер командой (Powershell):
+3. Запустите контейнер командой (Powershell):
 
 ```bash
-docker run -d -p 8080:8080 -v "$(pwd)/files:/app/files" --name api apiservicedocker run -d -p 8080:8080 -v "$(pwd)/files:/app/files" --name api apiservice
+docker run -d -p 8080:8080 -v "$(pwd)/files:/app/files" --name api apiservice
 ```
+
+4. Перейдите в папку `files` в текущей директории и добавьте файлы взаимодейтсвия.
 
 ## Работа сервиса
 
@@ -52,7 +55,7 @@ ___Примечания:___
 
 #### Автоматическое
 
-1. Перейдите в тестовый проект SafeBoard/ApiService.Tests
+1. Перейдите в тестовый проект `SafeBoard/ApiService.Tests`
 2. Запустите выполнение тестов с помощью команды:
 
 ```bash

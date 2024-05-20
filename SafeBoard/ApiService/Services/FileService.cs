@@ -69,8 +69,14 @@ namespace ApiService.Services
         /// <returns>Перечисление строк с именами файлов.</returns>
         public IEnumerable<string> GetFilesNames()
         {
-            // Возврат списка всех файлов в директории
-            return Directory.GetFiles(filesDirPath);
+            // Возврат списка имен всех файлов в директории
+            var files = Directory.GetFiles(filesDirPath);
+            for (int i = 0; i < files.Length; i++)
+            {
+                files[i] = Path.GetFileName(files[i]);
+            }
+
+            return files;
         }
 
         /// <summary>

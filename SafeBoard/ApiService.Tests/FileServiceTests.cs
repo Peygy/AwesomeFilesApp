@@ -28,7 +28,6 @@ namespace ApiService.Tests
                 }
                 catch (IOException)
                 {
-                    // Retry logic or wait for a short period to ensure all handles are released
                     Thread.Sleep(100);
                     Directory.Delete(testFilesDirPath, true);
                 }

@@ -23,9 +23,11 @@ namespace ApiService.Tests
                 .Setup(mc => mc.CreateEntry(It.IsAny<object>()))
                 .Returns(cacheEntryMock.Object);
 
+            // Установка тестового пути для файлов
             testArchiveDirPath = Path.Combine(Path.GetTempPath(), "archives_test");
             configurationMock.Setup(config => config.GetSection("Paths:Archives").Value).Returns(testArchiveDirPath);
 
+            // Удаляем тестовую директорию, если она уже существует
             if (Directory.Exists(testArchiveDirPath))
             {
                 try
@@ -34,7 +36,6 @@ namespace ApiService.Tests
                 }
                 catch (IOException)
                 {
-                    // Retry logic or wait for a short period to ensure all handles are released
                     Thread.Sleep(100);
                     Directory.Delete(testArchiveDirPath, true);
                 }
@@ -148,14 +149,12 @@ namespace ApiService.Tests
                 FilePaths = new List<string> { "file1" }
             };
 
-            archiveService.GetType()
-                   .GetField("processStatusStorage", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
+            archiveService.GetType().GetField("processStatusStorage", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
                    ?.GetValue(archiveService)
                    .GetType()
                    .GetMethod("TryAdd")
-                   ?.Invoke(archiveService.GetType()
-                                   .GetField("processStatusStorage", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                                   ?.GetValue(archiveService), [process.Id, process]);
+                   ?.Invoke(archiveService.GetType().GetField("processStatusStorage", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
+                   ?.GetValue(archiveService), [process.Id, process]);
 
             // Act
             var stream = archiveService.GetArchiveByProcessId(process.Id);
