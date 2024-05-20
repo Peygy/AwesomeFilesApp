@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\apiservice\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|solutionrelative:apiservice\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\clientservice\\commands\\getcompletearchivecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|solutionrelative:clientservice\\commands\\getcompletearchivecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|solutionrelative:apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\clientservice\\commands\\getprocessstatuscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|solutionrelative:clientservice\\commands\\getprocessstatuscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\clientservice\\commands\\getjustarchivecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|solutionrelative:clientservice\\commands\\getjustarchivecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\clientservice\\commands\\listfilescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|solutionrelative:clientservice\\commands\\listfilescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\clientservice\\commands\\downloadarchivecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|solutionrelative:clientservice\\commands\\downloadarchivecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\clientservice\\commands\\createarchivecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|solutionrelative:clientservice\\commands\\createarchivecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\clientservice\\commands\\clientstartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|solutionrelative:clientservice\\commands\\clientstartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\clientservice\\apihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,76 +42,117 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Program.cs",
               "RelativeDocumentMoniker": "ClientService\\Program.cs",
               "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Program.cs",
               "RelativeToolTip": "ClientService\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAowDMAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T19:19:08.592Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ApiHandler.cs",
               "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\ApiHandler.cs",
               "RelativeDocumentMoniker": "ClientService\\ApiHandler.cs",
               "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\ApiHandler.cs",
               "RelativeToolTip": "ClientService\\ApiHandler.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwDIAAAA8AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIQAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T11:34:10.116Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "README.md",
-              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\README.md",
-              "RelativeDocumentMoniker": "ApiService\\README.md",
-              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\README.md",
-              "RelativeToolTip": "ApiService\\README.md",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-05-20T15:44:05.307Z",
+              "DocumentIndex": 2,
+              "Title": "ListFilesCommand.cs",
+              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\ListFilesCommand.cs",
+              "RelativeDocumentMoniker": "ClientService\\Commands\\ListFilesCommand.cs",
+              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\ListFilesCommand.cs",
+              "RelativeToolTip": "ClientService\\Commands\\ListFilesCommand.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T21:57:43.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Program.cs",
-              "RelativeDocumentMoniker": "ApiService\\Program.cs",
-              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Program.cs",
-              "RelativeToolTip": "ApiService\\Program.cs",
+              "Title": "GetProcessStatusCommand.cs",
+              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\GetProcessStatusCommand.cs",
+              "RelativeDocumentMoniker": "ClientService\\Commands\\GetProcessStatusCommand.cs",
+              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\GetProcessStatusCommand.cs",
+              "RelativeToolTip": "ClientService\\Commands\\GetProcessStatusCommand.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T21:57:44.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetCompleteArchiveCommand.cs",
+              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\GetCompleteArchiveCommand.cs",
+              "RelativeDocumentMoniker": "ClientService\\Commands\\GetCompleteArchiveCommand.cs",
+              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\GetCompleteArchiveCommand.cs",
+              "RelativeToolTip": "ClientService\\Commands\\GetCompleteArchiveCommand.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAswCcAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T21:49:15.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DownloadArchiveCommand.cs",
+              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\DownloadArchiveCommand.cs",
+              "RelativeDocumentMoniker": "ClientService\\Commands\\DownloadArchiveCommand.cs",
+              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\DownloadArchiveCommand.cs",
+              "RelativeToolTip": "ClientService\\Commands\\DownloadArchiveCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:43:08.119Z",
+              "WhenOpened": "2024-05-20T21:49:15.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateArchiveCommand.cs",
+              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\CreateArchiveCommand.cs",
+              "RelativeDocumentMoniker": "ClientService\\Commands\\CreateArchiveCommand.cs",
+              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\CreateArchiveCommand.cs",
+              "RelativeToolTip": "ClientService\\Commands\\CreateArchiveCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T21:49:13.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientStartCommand.cs",
+              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\ClientStartCommand.cs",
+              "RelativeDocumentMoniker": "ClientService\\Commands\\ClientStartCommand.cs",
+              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\ClientStartCommand.cs",
+              "RelativeToolTip": "ClientService\\Commands\\ClientStartCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T21:49:13.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetJustArchiveCommand.cs",
-              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\GetJustArchiveCommand.cs",
-              "RelativeDocumentMoniker": "ClientService\\Commands\\GetJustArchiveCommand.cs",
-              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\GetJustArchiveCommand.cs",
-              "RelativeToolTip": "ClientService\\Commands\\GetJustArchiveCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:37:17.615Z",
-              "EditorCaption": ""
             }
           ]
         }

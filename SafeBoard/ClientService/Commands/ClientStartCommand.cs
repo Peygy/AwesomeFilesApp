@@ -7,7 +7,7 @@ namespace ClientService.Commands
     [Subcommand(typeof(CreateArchiveCommand))]
     [Subcommand(typeof(GetProcessStatusCommand))]
     [Subcommand(typeof(DownloadArchiveCommand))]
-    [Subcommand(typeof(GetJustArchiveCommand))]
+    [Subcommand(typeof(GetCompleteArchiveCommand))]
     internal class ClientStartCommand
     {
         private async Task<int> OnExecuteAsync(CommandLineApplication app, IConsole console)
