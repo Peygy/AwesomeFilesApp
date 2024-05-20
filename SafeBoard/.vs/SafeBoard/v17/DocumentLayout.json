@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\apiservice\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|solutionrelative:apiservice\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2FCEE05-5AAC-4D31-94A0-BF4A391C1B0F}|ApiService\\ApiService.csproj|solutionrelative:apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|h:\\programming\\c#\\repos\\safeboardtest\\safeboard\\clientservice\\commands\\getjustarchivecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D91C290-D3D2-426E-9206-80E7C6038988}|ClientService\\ClientService.csproj|solutionrelative:clientservice\\commands\\getjustarchivecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Program.cs",
               "RelativeDocumentMoniker": "ClientService\\Program.cs",
@@ -35,12 +43,11 @@
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T19:19:08.592Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ApiHandler.cs",
               "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\ApiHandler.cs",
               "RelativeDocumentMoniker": "ClientService\\ApiHandler.cs",
@@ -49,12 +56,41 @@
               "ViewState": "AQIAAAoAAAAAAAAAAAAgwDIAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T11:34:10.116Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\README.md",
+              "RelativeDocumentMoniker": "ApiService\\README.md",
+              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\README.md",
+              "RelativeToolTip": "ApiService\\README.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-05-20T15:44:05.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Program.cs",
+              "RelativeDocumentMoniker": "ApiService\\Program.cs",
+              "ToolTip": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ApiService\\Program.cs",
+              "RelativeToolTip": "ApiService\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T15:43:08.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GetJustArchiveCommand.cs",
               "DocumentMoniker": "H:\\Programming\\C#\\Repos\\SafeBoardTest\\SafeBoard\\ClientService\\Commands\\GetJustArchiveCommand.cs",
               "RelativeDocumentMoniker": "ClientService\\Commands\\GetJustArchiveCommand.cs",
@@ -64,10 +100,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T15:37:17.615Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
