@@ -5,7 +5,7 @@ namespace ClientService
     /// <summary>
     /// Класс для обработки запросов к API.
     /// </summary>
-    internal class ApiHandler
+    public class ApiHandler : IApiHandler
     {
         private readonly HttpClient httpClient;
         private int archivesCounter;

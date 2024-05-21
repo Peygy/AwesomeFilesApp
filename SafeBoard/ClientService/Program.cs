@@ -19,7 +19,7 @@ public class Program
         // Создание коллекции сервисов и внедрение зависимостей
         var services = new ServiceCollection()
             // Регистрация ApiHandler как сервиса
-            .AddSingleton(_ => new ApiHandler("http://localhost:8080"))
+            .AddSingleton<IApiHandler>(_ => new ApiHandler("http://localhost:8080"))
             // Построение провайдера сервисов.
             .BuildServiceProvider();
 
@@ -38,7 +38,7 @@ public class Program
     /// <param name="app">Экземпляр приложения командной строки.</param>
     /// <param name="console">Интерфейс консоли для ввода и вывода данных.</param>
     /// <returns>Задача, представляющая результат выполнения команды.</returns>
-    private async Task<int> OnExecuteAsync(CommandLineApplication app, IConsole console)
+    public async Task<int> OnExecuteAsync(CommandLineApplication app, IConsole console)
     {
         while (true)
         {

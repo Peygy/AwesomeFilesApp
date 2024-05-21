@@ -6,15 +6,15 @@ namespace ClientService.Commands
     /// Класс команды для вывода списка файлов.
     /// </summary>
     [Command(Name = "list", Description = "Команда вывода файлов")]
-    internal class ListFilesCommand
+    public class ListFilesCommand
     {
-        private readonly ApiHandler apiHandler;
+        private readonly IApiHandler apiHandler;
 
         /// <summary>
         /// Конструктор класса команды, принимает обработчик ApiHandler для взаимодействия с API.
         /// </summary>
         /// <param name="apiHandler">Обработчик для выполнения запросов к API.</param>
-        public ListFilesCommand(ApiHandler apiHandler)
+        public ListFilesCommand(IApiHandler apiHandler)
         {
             this.apiHandler = apiHandler;
         }
@@ -23,7 +23,7 @@ namespace ClientService.Commands
         /// Асинхронный метод, выполняемый при запуске команды.
         /// </summary>
         /// <returns>Задача, представляющая результат выполнения команды.</returns>
-        private async Task<int> OnExecuteAsync()
+        public async Task<int> OnExecuteAsync()
         {
             try
             {
@@ -36,6 +36,7 @@ namespace ClientService.Commands
             {
                 // Обработка исключений и вывод сообщения об ошибке
                 Console.WriteLine($"Error: {ex.Message}");
+                return 1;
             }
 
             // Возвращение кода завершения 0, что означает успешное выполнение

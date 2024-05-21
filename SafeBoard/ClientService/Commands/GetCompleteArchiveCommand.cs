@@ -6,9 +6,9 @@ namespace ClientService.Commands
     /// Класс команды для создания архива, проверки статуса и скачивания архива.
     /// </summary>
     [Command(Name = "complete-archive", Description = "Создать архив, проверить статус и скачать его")]
-    internal class GetCompleteArchiveCommand
+    public class GetCompleteArchiveCommand
     {
-        private readonly ApiHandler apiHandler;
+        private readonly IApiHandler apiHandler;
 
         /// <summary>
         /// Путь для сохранения архива, передаваемый в командной строке.
@@ -26,7 +26,7 @@ namespace ClientService.Commands
         /// Конструктор класса команды, принимает обработчик ApiHandler для взаимодействия с API.
         /// </summary>
         /// <param name="apiHandler">Обработчик ApiHandler для выполнения запросов к API.</param>
-        public GetCompleteArchiveCommand(ApiHandler apiHandler)
+        public GetCompleteArchiveCommand(IApiHandler apiHandler)
         {
             this.apiHandler = apiHandler;
         }
@@ -35,13 +35,13 @@ namespace ClientService.Commands
         /// Асинхронный метод, выполняемый при запуске команды.
         /// </summary>
         /// <returns>Задача, представляющая результат выполнения команды.</returns>
-        private async Task<int> OnExecuteAsync()
+        public async Task<int> OnExecuteAsync()
         {
             // Проверка на наличие переданных имен файлов и пути для сохранения архива
             if (FileNames == null || FileNames.Count == 0 || string.IsNullOrEmpty(OutputPath))
             {
                 Console.WriteLine("Error: Необходимо указать имена файлов и путь для сохранения архива.");
-                return 0;
+                return 1;
             }
 
             try
@@ -52,13 +52,14 @@ namespace ClientService.Commands
                 if (processId == 0)
                 {
                     Console.WriteLine("Ошибка создания архива");
-                    return 0;
+                    return 1;
                 }
                 Console.WriteLine($"Create archive task is started, id: {processId}");
 
                 // Цикл для проверки статуса процесса архивации
                 while (true)
                 {
+                    // Вызов метода API для получения статуса выполнения процесса
                     var status = await apiHandler.GetArchiveStatusAsync(processId);
                     Console.WriteLine($"Process status: {status}");
 
@@ -82,6 +83,7 @@ namespace ClientService.Commands
             {
                 // Обработка исключений и вывод сообщения об ошибке
                 Console.WriteLine($"Error: {ex.Message}");
+                return 1;
             }
 
             // Возвращение кода завершения 0, что означает успешное выполнение

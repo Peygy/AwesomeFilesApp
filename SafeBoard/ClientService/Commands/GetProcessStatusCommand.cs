@@ -6,9 +6,9 @@ namespace ClientService.Commands
     /// Класс команды для получения статуса процесса создания архива.
     /// </summary>
     [Command(Name = "status", Description = "Команда для получения статуса процесса создания архива")]
-    internal class GetProcessStatusCommand
+    public class GetProcessStatusCommand
     {
-        private readonly ApiHandler apiHandler;
+        private readonly IApiHandler apiHandler;
 
         /// <summary>
         /// Идентификатор процесса архивации, передаваемый в командной строке.
@@ -20,7 +20,7 @@ namespace ClientService.Commands
         /// Конструктор класса команды, принимает обработчик ApiHandler для взаимодействия с API.
         /// </summary>
         /// <param name="apiHandler">Обработчик ApiHandler для выполнения запросов к API.</param>
-        public GetProcessStatusCommand(ApiHandler apiHandler)
+        public GetProcessStatusCommand(IApiHandler apiHandler)
         {
             this.apiHandler = apiHandler;
         }
@@ -29,7 +29,7 @@ namespace ClientService.Commands
         /// Асинхронный метод, выполняемый при запуске команды.
         /// </summary>
         /// <returns>Задача, представляющая результат выполнения команды.</returns>
-        private async Task<int> OnExecuteAsync()
+        public async Task<int> OnExecuteAsync()
         {
             try
             {
@@ -51,6 +51,7 @@ namespace ClientService.Commands
             {
                 // Обработка исключений и вывод сообщения об ошибке
                 Console.WriteLine($"Error: {ex.Message}");
+                return 1;
             }
 
             // Возвращение кода завершения 0, что означает успешное выполнение
