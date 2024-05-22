@@ -17,7 +17,6 @@ H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Microsoft.OpenApi.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -27,9 +26,6 @@ H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Moq.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\xunit.abstractions.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\xunit.assert.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Debug\net8.0\xunit.core.dll

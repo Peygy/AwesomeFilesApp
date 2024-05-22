@@ -18,18 +18,8 @@ builder.Services.AddMemoryCache();
 
 // ƒобавление сервиса, дл€ регистрации всего необходимого дл€ разработки веб-API
 builder.Services.AddControllers();
-// ƒобавление сервисов дл€ Swagger
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
-// ƒобавление Swagger при Debug-разработке
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
 // Middleware дл€ логировани€ запросов пользовател€ на серввис
 app.UseMiddleware<LogDataMiddleware>();

@@ -29,7 +29,6 @@ H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\Microsoft.Extensions.DependencyModel.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\Microsoft.OpenApi.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -42,9 +41,6 @@ H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\SQLitePCLRaw.batteries_v2.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\SQLitePCLRaw.core.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\xunit.abstractions.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\xunit.assert.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService.Tests\bin\Release\net8.0\xunit.core.dll

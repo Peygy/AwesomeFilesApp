@@ -11,13 +11,9 @@ H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\Mi
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\Microsoft.Extensions.DependencyModel.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\Microsoft.OpenApi.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\SQLitePCLRaw.batteries_v2.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\SQLitePCLRaw.core.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\runtimes\linux-arm\native\libe_sqlite3.so
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\bin\Release\net8.0\runtimes\linux-arm64\native\libe_sqlite3.so
@@ -43,7 +39,6 @@ H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\obj\Release\net8.0\Ap
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\obj\Release\net8.0\ApiService.AssemblyInfoInputs.cache
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\obj\Release\net8.0\ApiService.AssemblyInfo.cs
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\obj\Release\net8.0\ApiService.csproj.CoreCompileInputs.cache
-H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\obj\Release\net8.0\ApiService.MvcApplicationPartsAssemblyInfo.cs
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\obj\Release\net8.0\ApiService.MvcApplicationPartsAssemblyInfo.cache
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\obj\Release\net8.0\ApiService.sourcelink.json
 H:\Programming\C#\Repos\SafeBoardTest\SafeBoard\ApiService\obj\Release\net8.0\staticwebassets.build.json
