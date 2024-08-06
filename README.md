@@ -1,5 +1,5 @@
 # AwesomeFiles
 
 ### Инструкции:
-1. [AwesomeFiles API](SafeBoard/ApiService/README.md)
-2. [AwesomeFiles Client](SafeBoard/ClientService/README.md)
+1. [AwesomeFiles API](AwesomeFilesApp/ApiService/README.md)
+2. [AwesomeFiles Client](AwesomeFilesApp/ClientService/README.md)
